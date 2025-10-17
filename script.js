@@ -22,9 +22,10 @@ if (num1 === num2 && num2 === num3) {
 } else {
     const ordenadoMenor = [...numeros].sort((a, b) => a - b); // Ordena de menor a mayor
     const ordenadoMayor = [...numeros].sort((a, b) => b - a); // Ordena de mayor a menor
-
-    dom("Orden de menor a mayor: " + ordenadoMenor.join(", ")); // Separa cada elemento con una ,
-    dom("Orden de mayor a menor: " + ordenadoMayor.join(", "));
+    
+    dom("Orden de mayor a menor: " + ordenadoMayor.join(", ")); // Separa cada elemento con una ,
+    dom("Orden de menor a mayor: " + ordenadoMenor.join(", ")); 
+    
     dom("Número menor: " + ordenadoMenor[0]);
     dom("Número medio: " + ordenadoMenor[1]);
     dom("Número mayor: " + ordenadoMenor[2]);
