@@ -11,10 +11,12 @@ numeros.push(num1, num2, num3);
 // Debe imprimir los números por consola o por el DOM ordenados de mayor a menor, y de menor a mayor.
 // Debe ser capaz de identificar si los números son iguales e imprimir un mensaje por consola o por el DOM diciendo que los números son iguales.
 
-//Titulo en el dom
+// Titulo en el dom
 const titulo = document.createElement("h2");//Crea un h2
 titulo.innerText = "Resultados: ";//Agrega el texto de p1, aun no se designa el valor
 document.body.appendChild(titulo);//Agrega a la pagina html
+// Numeros ingresados
+dom("Los numeros ingresados fueron: " + numeros.join(", "));
 
 if (num1 === num2 && num2 === num3) {
     const mensaje = "Los 3 números son iguales";
