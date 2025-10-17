@@ -21,6 +21,7 @@ dom("Los numeros ingresados fueron: " + numeros.join(", "));
 if (num1 === num2 && num2 === num3) {
     const mensaje = "Los 3 números son iguales";
     dom(mensaje);
+    console.log (mensaje);
 } else {
     const ordenadoMenor = [...numeros].sort((a, b) => a - b); // Ordena de menor a mayor
     const ordenadoMayor = [...numeros].sort((a, b) => b - a); // Ordena de mayor a menor
@@ -31,6 +32,9 @@ if (num1 === num2 && num2 === num3) {
     dom("Número menor: " + ordenadoMenor[0]);
     dom("Número medio: " + ordenadoMenor[1]);
     dom("Número mayor: " + ordenadoMenor[2]);
+
+    console.log(ordenadoMayor);
+    console.log(ordenadoMenor);
 }
 
 
